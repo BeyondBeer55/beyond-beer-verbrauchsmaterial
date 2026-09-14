@@ -29,7 +29,7 @@ h1{margin:0;font-size:25px}.sub{font-size:12px;opacity:.65;margin-top:3px}main{p
 <header><div class="wrap"><h1>BEYOND BEER</h1><div class="sub">VERBRAUCHSMATERIAL · STORE</div></div></header>
 <main class="wrap">
 <input id="search" class="search" placeholder="🔎 Produkt suchen..." oninput="render()">
-<div class="nav"><button class="primary" onclick="showAll()">📦 Alle Produkte</button><button class="danger" onclick="showLow()">🔴 Nachbestellen</button><button class="white" onclick="showCart()">🛒 Warenkorb <span id="cartCount">0</span></button><button class="white" onclick="openScanner()">📷 EAN scannen</button></div>
+<div class="nav"><button class="primary" onclick="showAll()">📦 Alle Produkte</button><button class="danger" onclick="showLow()">🔴 Nachbestellen</button><button class="white" onclick="showCart()">🛒 Warenkorb <span id="cartCount">0</span></button><button class="white" onclick="openScanner()">📷 EAN scannen</button>button class="white" onclick="exportBestand()">📥 Bestand exportieren</button></div>
 <div id="stats" class="stats"></div><div id="list" class="cards"></div></main>
 <div id="modal" class="modal hidden" onclick="if(event.target===this)closeModal()"><div class="modalbox"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
 <script>
