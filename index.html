@@ -47,9 +47,7 @@ const initialProducts=[{"id": 1, "name": "Mülltüten", "articleNo": "9999504", 
 ,{"id":31,"name":"Aufkleber Rabatt 50%","articleNo":"","stock":0,"minimum":0,"orderQty":1,"location":"","ean":"","supplier":"","photo":""}];
 const APP_VERSION="11";
 const storedVersion=localStorage.getItem("bb_app_version");
-if(storedVersion!==APP_VERSION){
-  localStorage.removeItem("bb_products");
-  localStorage.removeItem("bb_cart");
+if(!storedVersion){
   localStorage.setItem("bb_app_version",APP_VERSION);
 }
 let products=JSON.parse(localStorage.getItem("bb_products")||"null");
